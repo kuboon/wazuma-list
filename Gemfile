@@ -11,7 +11,6 @@ group :assets do
 
   gem "therubyracer"
   gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-  gem "twitter-bootstrap-rails"
 
   gem "jquery-ui-rails"
 end
@@ -32,6 +31,8 @@ gem 'sorcery'
 gem 'twitter'
 gem 'sextant'
 gem 'acts-as-taggable-on'
+
+gem "twitter-bootstrap-rails"
 
 group :development do
   gem "i18n_generators"
