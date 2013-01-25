@@ -48,10 +48,8 @@ gem 'sorcery'
 gem 'twitter'
 gem 'sextant'
 gem 'acts-as-taggable-on'
-group :assets do
-  gem "twitter-bootstrap-rails", "~> 2.0.6"
-  gem "jquery-ui-rails"
-end
+gem "twitter-bootstrap-rails", "~> 2.0.6"
+gem "jquery-ui-rails"
 
 group :development do
   gem "i18n_generators"
