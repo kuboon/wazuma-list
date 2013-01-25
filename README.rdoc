@@ -4,3 +4,7 @@
 
 リンクしているリストは https://twitter.com/wazuma_circle/members
 稼働しているアプリは http://wazuma-list.herokuapp.com/
+
+ローカルで動作させたい方は、環境変数の設定が必要です。
+適当な twitter app を read only で生成し、TWITTER_KEY に consumer key、 TWITTER_SECRET に consumer secret を設定してください。
+（リストへの追加削除の処理はスキップされます）
