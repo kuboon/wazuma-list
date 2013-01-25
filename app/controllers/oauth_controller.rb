@@ -1,3 +1,4 @@
+# coding: utf-8
 class OauthController < ApplicationController
   skip_before_filter :require_login
 
@@ -22,7 +23,7 @@ class OauthController < ApplicationController
 
     reset_session # protect from session fixation attack
     auto_login(@user)
-    @user.join_to_list
+    flash[:notice] = "追加されたよ!" if @user.join_to_list
     redirect_back_or_to root_url
   end
 end
