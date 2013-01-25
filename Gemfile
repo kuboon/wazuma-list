@@ -24,7 +24,7 @@ gem "bootstrap_form"
 gem "kaminari"
 gem 'strong_parameters'
 gem 'action_args'
-gem 'sorcery'
+gem 'sorcery', github: 'kuboon/sorcery'
 gem 'twitter'
 gem 'sextant'
 gem 'acts-as-taggable-on'

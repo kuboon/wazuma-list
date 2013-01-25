@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/kuboon/sorcery.git
+  revision: 5d231c7b4f873507a067dab5c61c53d4da9a2521
+  specs:
+    sorcery (0.8.1)
+      bcrypt-ruby (~> 3.0.0)
+      oauth (~> 0.4.4)
+      oauth2 (~> 0.8.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -178,10 +187,6 @@ GEM
       rails (>= 3.2)
     simple_oauth (0.1.9)
     slop (3.4.3)
-    sorcery (0.8.1)
-      bcrypt-ruby (~> 3.0.0)
-      oauth (~> 0.4.4)
-      oauth2 (~> 0.8.0)
     spork (1.0.0rc3)
     spork-rails (3.2.1)
       rails (>= 3.0.0, < 3.3.0)
@@ -262,7 +267,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 3.2.3)
   sextant
-  sorcery
+  sorcery!
   spork-rails
   strong_parameters
   therubyracer
