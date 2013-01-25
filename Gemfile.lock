@@ -43,6 +43,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    commonjs (0.2.6)
     daemons (1.1.9)
     delayed_job (3.0.4)
       activesupport (~> 3.0)
@@ -90,6 +91,12 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    less (2.2.2)
+      commonjs (~> 0.2.6)
+    less-rails (2.2.6)
+      actionpack (>= 3.1)
+      less (~> 2.2.0)
+    libv8 (3.3.10.4)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -188,6 +195,8 @@ GEM
       actionpack (~> 3.0)
       activemodel (~> 3.0)
       railties (~> 3.0)
+    therubyracer (0.10.2)
+      libv8 (~> 3.3.10)
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -246,6 +255,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   kaminari
+  less-rails
   mysql2
   pry-rails
   rails (= 3.2.11)
@@ -255,8 +265,9 @@ DEPENDENCIES
   sorcery
   spork-rails
   strong_parameters
+  therubyracer
   thin
   twitter
-  twitter-bootstrap-rails (~> 2)
+  twitter-bootstrap-rails
   uglifier (>= 1.0.3)
   webrat
