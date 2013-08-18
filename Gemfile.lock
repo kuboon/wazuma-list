@@ -40,6 +40,10 @@ GEM
       multi_json (~> 1.0)
     acts-as-taggable-on (2.4.1)
       rails (>= 3, < 5)
+    airbrake (3.1.12)
+      activesupport
+      builder
+      json
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     bootstrap_form (1.0.0)
@@ -64,9 +68,6 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     eventmachine (1.0.3)
-    exception_notification (4.0.0)
-      actionmailer (>= 3.0.4)
-      activesupport (>= 3.0.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
     faraday (0.8.8)
@@ -242,10 +243,10 @@ PLATFORMS
 DEPENDENCIES
   action_args
   acts-as-taggable-on
+  airbrake
   bootstrap_form
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
-  exception_notification
   haml-rails
   i18n_generators
   jquery-rails

@@ -16,7 +16,7 @@ gem 'jquery-rails'
 
 gem 'thin'
 
-gem "exception_notification"
+gem 'airbrake'
 gem "delayed_job_active_record"
 gem "haml-rails"
 gem "jquery-rails"
