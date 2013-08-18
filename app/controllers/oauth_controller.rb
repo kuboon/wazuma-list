@@ -12,12 +12,12 @@ class OauthController < ApplicationController
     @user = login_from(provider)
 
     if @user
-      @user.authentication(provider).update_attributes(access_token: access_token(provider), user_info_hash: get_user_hash_from(provider))
+      @user.authentication(provider).update_attributes(access_token: access_token(provider), user_info_hash: sorcery_fetch_user_hash(provider))
       return redirect_back_or_to root_url
     end
 
     @user = create_from(provider)
-    @user.authentication(provider).update_attributes(access_token: access_token(provider), user_info_hash: get_user_hash_from(provider))
+    @user.authentication(provider).update_attributes(access_token: access_token(provider), user_info_hash: sorcery_fetch_user_hash(provider))
 
     # NOTE: this is the place to add '@user.activate!' if you are using user_activation submodule
 

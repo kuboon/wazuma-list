@@ -26,7 +26,7 @@ gem "bootstrap_form"
 gem "kaminari"
 gem 'strong_parameters'
 gem 'action_args'
-gem 'sorcery', github: 'kuboon/sorcery'
+gem 'sorcery'
 gem 'twitter'
 gem 'sextant'
 gem 'acts-as-taggable-on'
@@ -44,4 +44,6 @@ group :development, :test do
   gem "webrat"
   gem "spork-rails"
   gem "pry-rails"
+  gem "better_errors"
+  gem 'binding_of_caller'
 end
